@@ -6,6 +6,9 @@ const Queue = require('../lib/Queue');
 
 function isPalindrome(queue) {
   // your code here
+  let str = queue.printQueue().replace(/\s+/g, '');
+  let reversedStr = str.split("").reverse().join("")
+  return str === reversedStr
 }
 
 const queue = new Queue();

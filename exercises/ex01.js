@@ -5,6 +5,10 @@ const Stack = require('../lib/Stack')
 
 function calcDistance(a, b) {
   // your code here
+  const first = students.items.indexOf(a)
+  const second = students.items.indexOf(b)
+
+  return second - first
 }
 
 const students = new Stack()
